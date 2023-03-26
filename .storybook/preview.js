@@ -1,5 +1,8 @@
+import myDecorator from './my-decorator'
+
 /** @type { import('@storybook/react').Preview } */
 const preview = {
+  decorators: [myDecorator],
   parameters: {
     actions: {argTypesRegex: '^on[A-Z].*'},
     controls: {
